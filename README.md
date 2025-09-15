@@ -59,6 +59,6 @@ like to do.
 
 This is a refactoring kata, so there is quite a lot of existing application
 structure to work with. There is a single test file with a single test case.
-You can run the tests by running `rake test` (or simply `rake`). If you want to
-run the application code in a console, you can do so by running
-`irb -r ./main`.
+
+You can run the tests by doing `rake test` (or simply `rake`) from the command
+line, and you can load up the app to play with by running `rake console`.
