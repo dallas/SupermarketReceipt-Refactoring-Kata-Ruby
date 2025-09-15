@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SpecialOfferType
   THREE_FOR_TWO = Object.new
   TEN_PERCENT_DISCOUNT = Object.new

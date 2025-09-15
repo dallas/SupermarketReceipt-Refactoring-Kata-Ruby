@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Discount
 
   attr_reader :product, :description, :discount_amount

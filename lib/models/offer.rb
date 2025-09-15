@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Offer
 
   attr_reader :product, :offer_type, :argument
