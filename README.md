@@ -54,3 +54,11 @@ If you would like to just do the refactoring part of this exercise, you can
 instead check out the `with_tests` branch (coming soon). Those tests have
 reasonably good coverage and should support most kinds of refactorings you’d
 like to do.
+
+## Development
+
+This is a refactoring kata, so there is quite a lot of existing application
+structure to work with. There is a single test file with a single test case.
+You can run the tests by running `rake test` (or simply `rake`). If you want to
+run the application code in a console, you can do so by running
+`irb -r ./main`.
