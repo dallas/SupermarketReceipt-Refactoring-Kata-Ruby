@@ -3,7 +3,6 @@
 require_relative './test_helper'
 
 class SupermarketTest < Minitest::Test
-
   def test_ten_percent_discount
     catalog = FakeCatalog.new
     toothbrush = Product.new("toothbrush", ProductUnit::EACH)
@@ -22,5 +21,4 @@ class SupermarketTest < Minitest::Test
 
     assert_in_delta 4.975, receipt.total_price, 0.01
   end
-
 end

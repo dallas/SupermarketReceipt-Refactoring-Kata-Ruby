@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class FakeCatalog < SupermarketCatalog
-
   def initialize
     @products = {}
     @prices = {}
@@ -15,5 +14,4 @@ class FakeCatalog < SupermarketCatalog
   def unit_price(p)
     @prices.fetch(p.name)
   end
-
 end

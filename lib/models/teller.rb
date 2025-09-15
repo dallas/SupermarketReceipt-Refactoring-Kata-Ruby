@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Teller
-
   def initialize(catalog)
     @catalog = catalog
     @offers = {}
@@ -25,5 +24,4 @@ class Teller
 
     receipt
   end
-
 end

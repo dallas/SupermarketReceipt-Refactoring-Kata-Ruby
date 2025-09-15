@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Offer
-
   attr_reader :product, :offer_type, :argument
 
   def initialize(offer_type, product, argument)
@@ -9,5 +8,4 @@ class Offer
     @argument = argument
     @product = product
   end
-
 end

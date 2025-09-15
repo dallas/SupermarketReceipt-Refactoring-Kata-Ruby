@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ShoppingCart
-
   def initialize
     @items = []
     @product_quantities = {}
@@ -70,5 +69,4 @@ class ShoppingCart
       end
     end
   end
-
 end

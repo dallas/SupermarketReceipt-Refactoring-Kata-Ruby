@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Receipt
-
   def initialize
     @items = []
     @discounts = []
@@ -35,5 +34,4 @@ class Receipt
   def discounts
     Array.new @discounts
   end
-
 end
