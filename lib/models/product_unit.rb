@@ -2,5 +2,5 @@
 
 module ProductUnit
   EACH = Object.new
-  KILO = Object.new
+  POUND = Object.new
 end

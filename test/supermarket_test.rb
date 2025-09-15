@@ -8,7 +8,7 @@ class SupermarketTest < Minitest::Test
     toothbrush = Product.new("toothbrush", ProductUnit::EACH)
     catalog.add_product(toothbrush, 0.99)
 
-    apples = Product.new("apples", ProductUnit::KILO)
+    apples = Product.new("apples", ProductUnit::POUND)
     catalog.add_product(apples, 1.99)
 
     cart = ShoppingCart.new
