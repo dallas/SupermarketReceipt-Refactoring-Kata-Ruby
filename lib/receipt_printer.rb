@@ -1,6 +1,18 @@
 # frozen_string_literal: true
 
 class ReceiptPrinter
+  def self.present_quantity(item)
+    return ProductUnit::EACH == item.product.unit ? '%x' % item.quantity.to_i : '%.3f' % item.quantity
+  end
+
+  def self.whitespace(whitespace_size)
+    whitespace = ''
+    whitespace_size.times do
+      whitespace.concat(' ')
+    end
+    return whitespace
+  end
+
   def initialize(columns = 40)
     @columns = columns
   end
@@ -41,17 +53,5 @@ class ReceiptPrinter
     whitespace = self.class.whitespace(@columns - total.size - price_presentation.size)
     result.concat(total, whitespace, price_presentation)
     return result.to_s
-  end
-
-  def self.present_quantity(item)
-    return ProductUnit::EACH == item.product.unit ? '%x' % item.quantity.to_i : '%.3f' % item.quantity
-  end
-
-  def self.whitespace(whitespace_size)
-    whitespace = ''
-    whitespace_size.times do
-      whitespace.concat(' ')
-    end
-    return whitespace
   end
 end
